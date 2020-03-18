@@ -20,7 +20,7 @@ allprojects {
 
 2. 在相关模块添加依赖
 ```
-implementation 'com.github.zhuozp:MarqueeRecyclerView:v1.0.0'
+implementation 'com.github.zhuozp:MarqueeRecyclerView:v1.0.1'
 ```
 
 3. 调用,可以使用自定义的MarqueeRecyclerView，也可以直接使用默认的recyclerview，默认的话不会自动滚动，但手动滑动的时候仍然支持循环展示，LooperLayoutManager的实现支持了循环滚动功能
