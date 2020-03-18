@@ -33,3 +33,16 @@ layoutManager.setLooperEnable(true);
 recyclerView.setLayoutManager(layoutManager);
 recyclerView.start();
 ```
+
+### 接口说明
+
+* LooperLayoutManager.java
+
+setScrollVertical(boolean scrollVertical)  设置是垂直还是水平布局、默认垂直方向
+setLooperEnable(boolean looperEnable) 设置是否无线循环，默认为true
+
+
+* MarqueeRecyclerView.java
+setAutoRun(boolean canRun)  设置是否自动滚动，默认为false
+start() 开启滚动，一般结合onResume()调用
+stop() 官博滚动， 一般结合onStop()调用
