@@ -73,10 +73,17 @@ public class LooperLayoutManager extends RecyclerView.LayoutManager {
             }
 
 
-            //如果当前布局过的itemView的宽度总和大于RecyclerView的宽（水平）或宽（垂直），则不再进行布局
-            if (autalLenght > getWidth()) {
-                break;
+            //如果当前布局过的itemView的宽度或高度总和大于RecyclerView的宽（水平）或高（垂直），则不再进行布局
+            if (this.scrollVertical) {
+                if (autalLenght > getHeight()) {
+                    break;
+                }
+            } else {
+                if (autalLenght > getWidth()) {
+                    break;
+                }
             }
+
         }
     }
 
